@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600&display=swap');
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+    margin: 0;
+    font-family: 'Urbanist', Arial, sans-serif;
+}
+
+.container {
+    background: #fff;
+    padding: 1.5rem 1rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+    max-width: 320px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 1.1rem;
+    color: #2d3a4b;
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+}
+
+form > div {
+    margin-bottom: 1.2rem;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.3rem;
+    color: #4a5568;
+    font-weight: 500;
+}
+
+input[type="url"],
+input[type="text"] {
+    width: 90%;
+    max-width: 90%;
+    padding: 0.5rem;
+    border: 1px solid #bfc9d1;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    margin-bottom: 0.2rem;
+    transition: border 0.2s;
+    box-sizing: border-box;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type="url"]:focus,
+input[type="text"]:focus {
+    border: 1.5px solid #5b9df9;
+    outline: none;
+}
+
+button[type="submit"] {
+    width: 70%;
+    max-width: 180px;
+    padding: 0.6rem;
+    background: #5b9df9;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    display: block;
+    margin: 1rem auto 0.5rem auto;
+}
+
+button[type="submit"]:hover {
+    background: #417de0;
+}
+
+h2 {
+    margin-top: 1.3rem;
+    color: #2d3a4b;
+    font-size: 1rem;
+}
+
+#shortened-urls {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+#shortened-urls li {
+    background: #f3f7fa;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem 0.7rem;
+    border-radius: 5px;
+    color: #2d3a4b;
+    font-size: 0.92rem;
+    word-break: break-all;
+}
