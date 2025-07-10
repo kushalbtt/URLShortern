@@ -5,7 +5,8 @@ import { readFile, writeFile } from "fs/promises";
 import path from "path";
 import crypto from "crypto";
 
-const port = 4000;
+
+const port = process.env.PORT || 4000;
 const Data_Files = path.join("data", "links.json");
 
 //Here we make a server and read the html file/page and display that. And at the end if the file isnot found print the message.
@@ -97,6 +98,6 @@ const server = createServer(async (req, res) => {
   }
 });
 
-server.listen(port, () => {
-  console.log(`Server running at http://localhost:${port}`);
+server.listen(port, '0.0.0.0', () => {
+  console.log(`Server running at http://0.0.0.0:${port}`);
 });
